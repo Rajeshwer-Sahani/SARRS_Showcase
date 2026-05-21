@@ -1,95 +1,173 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>SARRS Showcase</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- HERO SECTION -->
+    <!-- NAVBAR -->
+
+    <nav>
+
+        <div class="logo-section">
+
+            <img src="screenshots/SARRS_circle_logo_removebg.png" alt="logo">
+
+            <h2>SARRS</h2>
+
+        </div>
+
+        <div class="nav-links">
+
+            <a href="#about">About</a>
+            <a href="#features">Features</a>
+            <a href="#workflow">Workflow</a>
+            <a href="#team">Team</a>
+
+        </div>
+
+    </nav>
+
+    <!-- HERO -->
+
     <section class="hero">
 
-        <h1>SARRS</h1>
+        <div class="hero-content">
 
-        <p>
-            Street Animal Rescue & Reporting System
-        </p>
+            <div class="badge">
+                Animal Rescue Technology Platform
+            </div>
 
-        <div class="hero-buttons">
+            <h1>
+                Street Animal Rescue & Reporting System
+            </h1>
 
-            <a href="#demo">
-                Watch Demo
-            </a>
+            <p>
+                A smart digital platform that connects citizens with NGOs and authorities
+                to report injured, stray, or emergency animal cases in real-time.
+            </p>
 
-            <a href="#">
-                GitHub
-            </a>
+            <div class="hero-buttons">
 
-            <a href="#">
-                Documentation
-            </a>
+                <a href="#demo" class="primary-btn">
+                    Watch Demo
+                </a>
+
+                <a href="#" class="secondary-btn">
+                    GitHub
+                </a>
+
+                <a href="#" class="secondary-btn">
+                    Documentation
+                </a>
+
+            </div>
 
         </div>
 
     </section>
 
     <!-- ABOUT -->
-    <section class="section">
 
-        <h2>About Project</h2>
+    <section class="section" id="about">
 
-        <p>
-            SARRS is a centralized digital platform designed to help citizens
-            report injured, stray, or deceased animals found on roads and
-            public areas.
-        </p>
+        <div class="section-title">
+
+            <span>ABOUT PROJECT</span>
+
+            <h2>What is SARRS?</h2>
+
+        </div>
+
+        <div class="about-box">
+
+            <p>
+                SARRS is a centralized digital platform designed to help citizens
+                report injured, stray, or deceased animals found on roads and
+                public areas.
+            </p>
+
+            <p>
+                The system allows real-time report submission with location,
+                image uploads, case tracking, and NGO dashboard management.
+            </p>
+
+        </div>
 
     </section>
 
     <!-- FEATURES -->
-    <section class="section">
 
-        <h2>Features</h2>
+    <section class="section" id="features">
+
+        <div class="section-title">
+
+            <span>FEATURES</span>
+
+            <h2>Core Functionalities</h2>
+
+        </div>
 
         <div class="features">
 
             <div class="card">
-                Real-Time Reporting
+                <h3>Real-Time Reporting</h3>
+                <p>Citizens can instantly report injured animals.</p>
             </div>
 
             <div class="card">
-                NGO Dashboard
+                <h3>NGO Dashboard</h3>
+                <p>Authorities manage and track rescue cases.</p>
             </div>
 
             <div class="card">
-                Ticket Tracking
+                <h3>Ticket Tracking</h3>
+                <p>Track every submitted report with status updates.</p>
             </div>
 
             <div class="card">
-                Status Updates
+                <h3>Status Updates</h3>
+                <p>Monitor progress from pending to resolved.</p>
             </div>
 
             <div class="card">
-                Notifications
+                <h3>Notifications</h3>
+                <p>Real-time alerts for NGOs and users.</p>
             </div>
 
             <div class="card">
-                Firebase Backend
+                <h3>Firebase Backend</h3>
+                <p>Cloud database with secure authentication.</p>
             </div>
 
         </div>
 
     </section>
 
-    <!-- DEMO VIDEO -->
+    <!-- DEMO -->
+
     <section class="section" id="demo">
 
-        <h2>Demo Video</h2>
+        <div class="section-title">
+
+            <span>PROJECT DEMO</span>
+
+            <h2>Live Demonstration</h2>
+
+        </div>
 
         <div class="video-container">
 
@@ -105,24 +183,91 @@
     </section>
 
     <!-- SCREENSHOTS -->
+
     <section class="section">
 
-        <h2>Screenshots</h2>
+        <div class="section-title">
+
+            <span>APPLICATION UI</span>
+
+            <h2>Project Screenshots</h2>
+
+        </div>
 
         <div class="gallery">
 
-            <img src="screenshots/login.png">
+            <img src="screenshots/splash_screen.png">
+            <img src="screenshots/register.png">
+            <img src="screenshots/login.png" alt="SARRS Logo">
+
             <img src="screenshots/home_screen.png">
-            <img src="screenshots/report.png">
+
+            <img src="screenshots/report_case.png">
+            <img src="screenshots/notification.png">
+            <img src="screenshots/about.png">
+            <img src="screenshots/setting.png">
+
+        </div>
+
+    </section>
+
+    <!-- WORKFLOW -->
+
+    <section class="section" id="workflow">
+
+        <div class="section-title">
+
+            <span>SYSTEM FLOW</span>
+
+            <h2>Workflow Diagram</h2>
+
+        </div>
+
+        <div class="workflow">
+
+            <div class="workflow-card">
+                Citizen Reports Animal
+            </div>
+
+            <div class="arrow">
+                →
+            </div>
+
+            <div class="workflow-card">
+                Report Stored in Firebase
+            </div>
+
+            <div class="arrow">
+                →
+            </div>
+
+            <div class="workflow-card">
+                NGO Receives Notification
+            </div>
+
+            <div class="arrow">
+                →
+            </div>
+
+            <div class="workflow-card">
+                Case Claimed & Resolved
+            </div>
 
         </div>
 
     </section>
 
     <!-- TEAM -->
-    <section class="section">
 
-        <h2>Team Members</h2>
+    <section class="section" id="team">
+
+        <div class="section-title">
+
+            <span>TEAM STRUCTURE</span>
+
+            <h2>Project Team Members</h2>
+
+        </div>
 
         <div class="team-grid">
 
@@ -156,12 +301,13 @@
     </section>
 
     <!-- FOOTER -->
+
     <footer>
 
-        <h2>Thank You</h2>
+        <h2>SARRS</h2>
 
         <p>
-            SARRS — Saving Street Animals Through Technology
+            Saving Street Animals Through Technology
         </p>
 
     </footer>
