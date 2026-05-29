@@ -299,30 +299,189 @@ aspect-ratio:9/19;
 
 
 
+/* WORKFLOW */
+
 
 /* WORKFLOW */
 
-.workflow{
+.workflow-wrapper{
+    margin-top:40px;
     display:flex;
-    flex-wrap:wrap;
+    flex-direction:column;
+    align-items:center;
+    gap:35px;
+}
+
+/* ROW */
+
+.workflow-row{
+    width: 100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:18px;
+    flex-wrap:nowrap;
+}
+
+/* REVERSE SECOND ROW
+
+.workflow-row.reverse{
+    flex-direction:row-reverse;
+} */
+
+.workflow-down-line{
+    width:3px;
+    height:50px;
+    background:#38bdf8;
+    margin:auto;
+}
+
+/* CARD */
+
+.workflow-step{
+    width:210px;
+    min-height:190px;
+    padding:24px 18px;
+    border-radius:24px;
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(255,255,255,0.08);
+    text-align:center;
+    position:relative;
+    transition:0.3s;
+}
+
+.workflow-step:hover{
+    transform:translateY(-6px);
+    border-color:#38bdf8;
+    box-shadow:0 10px 30px rgba(56,189,248,0.12);
+}
+
+/* ICON */
+
+.workflow-icon{
+    width:68px;
+    height:68px;
+    margin:auto;
+    margin-bottom:18px;
+    border-radius:50%;
+    background:rgba(56,189,248,0.12);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:28px;
+    border:1px solid rgba(56,189,248,0.2);
+}
+
+/* NUMBER */
+
+.step-number{
+    position:absolute;
+    top:-14px;
+    left:50%;
+    transform:translateX(-50%);
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    background:#0ea5e9;
+    display:flex;
     justify-content:center;
     align-items:center;
-    gap:20px;
+    font-size:15px;
+    font-weight:600;
+    border:3px solid #020617;
 }
 
-.workflow-card{
-    padding:30px;
-    background:rgba(255,255,255,0.04);
+/* TEXT */
+
+.workflow-step h3{
+    font-size:18px;
+    margin-bottom:10px;
+    line-height:1.4;
+}
+
+.workflow-step p{
+    font-size:13px;
+    line-height:1.7;
+    color:#cbd5e1;
+}
+
+/* CONNECTOR */
+
+.workflow-connector{
+    width:45px;
+    height:3px;
+    background:#38bdf8;
     border-radius:20px;
-    border:1px solid rgba(255,255,255,0.08);
-    min-width:250px;
-    text-align:center;
+    opacity:0.8;
 }
 
-.arrow{
-    font-size:40px;
-    color:#38bdf8;
+/* FINAL STEP */
+
+.workflow-final{
+    display:flex;
+    justify-content:center;
+    margin-top:10px;
 }
+
+.final-step{
+    width:230px;
+}
+
+/* BENEFITS */
+
+.workflow-benefits{
+    margin-top:60px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:18px;
+}
+
+.benefit-card{
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(255,255,255,0.08);
+    padding:18px;
+    border-radius:18px;
+    text-align:center;
+    font-size:14px;
+    transition:0.3s;
+}
+
+.benefit-card:hover{
+    border-color:#38bdf8;
+    transform:translateY(-4px);
+}
+
+/* MOBILE */
+
+@media(max-width:1100px){
+
+    .workflow-row{
+        flex-direction:column;
+    }
+
+    .workflow-row.reverse{
+        flex-direction:column;
+    }
+
+    .workflow-connector{
+        width:3px;
+        height:40px;
+    }
+}
+
+.benefit-card span{
+    font-size:26px;
+    display:block;
+    margin-bottom:10px;
+}
+
+.benefit-card p{
+    color:#e2e8f0;
+    font-size:14px;
+}
+
+
+
 
 /* TEAM */
 
