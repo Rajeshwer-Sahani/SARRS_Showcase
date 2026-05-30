@@ -38,7 +38,23 @@
 
         </div>
 
+        <div class="menu-toggle" onclick="toggleMenu()">
+            ☰
+        </div>
+
     </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+
+        <a href="#about" onclick="closeMenu()">About</a>
+
+        <a href="#features" onclick="closeMenu()">Features</a>
+
+        <a href="#workflow" onclick="closeMenu()">Workflow</a>
+
+        <a href="#team" onclick="closeMenu()">Team</a>
+
+    </div>
 
     <!-- HERO -->
 
@@ -675,5 +691,19 @@
     </footer>
 
 </body>
+
+<script>
+
+    function toggleMenu() {
+        document.getElementById("mobileMenu")
+            .classList.toggle("show-menu");
+    }
+
+    function closeMenu() {
+        document.getElementById("mobileMenu")
+            .classList.remove("show-menu");
+    }
+
+</script>
 
 </html>

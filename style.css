@@ -676,6 +676,19 @@ footer h2 {
     font-size: 14px;
 }
 
+
+
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+}
+
+.mobile-menu {
+    display: none;
+}
+
 /* =========================
    MOBILE RESPONSIVE
 ========================= */
@@ -687,28 +700,76 @@ footer h2 {
     }
 
     .logo-section {
-    gap: 10px;
-}
+        gap: 10px;
+    }
 
-.logo-section img {
-    width: 70px;
-    height: 70px;
-    object-fit: contain;
-}
+    .logo-section img {
+        width: 70px;
+        height: 70px;
+        object-fit: contain;
+    }
 
-.logo-section h2 {
-    font-size: 20px;
-    font-weight: 700;
-}
+    .logo-section h2 {
+        font-size: 20px;
+        font-weight: 700;
+    }
 
     img {
         max-width: 100%;
         height: auto;
     }
 
+
+    
+     /* Mobile Menu Styling */
+
     .nav-links {
         display: none;
     }
+
+    .menu-toggle {
+        display: block;
+    }
+
+
+    .mobile-menu {
+        position: fixed;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        background: rgba(2, 6, 23, 0.98);
+        backdrop-filter: blur(20px);
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 20px;
+
+        padding: 25px;
+
+        transform: translateY(-120%);
+        transition: 0.3s ease;
+
+        z-index: 999;
+    }
+
+    .mobile-menu a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    .mobile-menu a:hover {
+        color: #38bdf8;
+    }
+
+    .show-menu {
+        transform: translateY(0);
+    }
+
+
+
+
 
     .hero {
         min-height: auto;
